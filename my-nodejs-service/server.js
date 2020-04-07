@@ -42,7 +42,7 @@ app.post('/submit', (req, res) => {
     name: req.body.name,
     message: req.body.message
   });
-  res.send('Thanks for your message!');
+  res.send('hello' + req.body.name + '!');
 });
 // [END add_post_handler]
 
